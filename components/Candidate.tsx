@@ -50,9 +50,12 @@ export default function CandidateListItem({ candidate }: CandidateListItemProps)
                 <Text style={styles.name}>{candidate.name}</Text>
                 <Text>{candidate.location}</Text>
             </View>
-            <View>
-                <Text style={styles.darkText}>Role</Text>
-                <Text>{candidate.role}</Text>
+            <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
+                <View>
+                    <Text style={styles.darkText}>Role</Text>
+                    <Text>{candidate.role}</Text>
+                </View>
+                <Text style={styles.soldButton}>Sold {candidate.sold}x</Text>
             </View>
             <View>
                 <Text style={styles.darkText}>Skills</Text>
@@ -175,8 +178,18 @@ const styles = StyleSheet.create({
         right:15,
         top: 13,
         zIndex: 10
-    }
-   
+    },
+   soldButton:{
+    // backgroundColor: '#f6f6f6',
+    // backgroundColor:'#39acff',
+    maxHeight: '10',
+    paddingHorizontal:8,
+    borderRadius: 5,
+    fontWeight: '600',
+    color: 'grey',
+    // boxShadow: '0 8px 8px -10px #1c90ff '
+        
+   }
     
     
 
