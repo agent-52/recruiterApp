@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import { TextInput, Button, View, Text, ScrollView, StyleSheet, FlatList, Pressable } from 'react-native';
 import PostListItem from "../../components/PostListItem";
 import AntDesign from '@expo/vector-icons/AntDesign';
+import Ionicons from '@expo/vector-icons/Ionicons';
+import { Link } from "expo-router";
+
+
 const SearchBox = () => {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState([]);
@@ -52,7 +56,13 @@ const SearchBox = () => {
 
   return (
     <View >
+        
       <View style={styles.searchBox}>
+        <Link href={'/'}>
+         <Ionicons name="arrow-back" size={24} color="grey" />
+        </Link>
+            
+        
         <TextInput
           style={styles.input}
           placeholder="Search..."

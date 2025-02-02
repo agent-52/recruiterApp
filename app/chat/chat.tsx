@@ -25,7 +25,7 @@ const onConnect = () => {
     }
 
 
-    wsRef.current = new WebSocket(`https://chat-room-api-ms4u.onrender.com/ws/chat/${roomId}/${userId}`);
+    wsRef.current = new WebSocket(`https://chat-room-945018261442.us-central1.run.app/ws/chat/${roomId}/${userId}`);
 
     wsRef.current.onopen = () => {
       setConnected(true);

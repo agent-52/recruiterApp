@@ -26,6 +26,7 @@ export default function TabLayout() {
         name="index"
         options={{
           title: 'Home',
+          headerShown: false,
           tabBarIcon: ({ color }) => <TabBarIcon name="home" color={color} />,
           headerRight: () => (
             <Link href="/modal" asChild>
@@ -47,16 +48,18 @@ export default function TabLayout() {
         name="search"
         options={{
           title: 'Search',
+          headerShown: false,
           tabBarIcon: ({ color }) => <TabBarIcon name="search" color={color} />,
         }}
       />
 
       <Tabs.Screen
-              name="new-post"
+              name="bids"
               options={{
-                title: "Post",
+                title: "Bids",
+                headerShown: false,
                 tabBarIcon: ({ color }) => (
-                  <TabBarIcon name="plus-square" color={color} />
+                  <TabBarIcon name="briefcase" color={color} />
                 ),
               }}
             />

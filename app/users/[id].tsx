@@ -32,7 +32,7 @@ export default function UserProfile() {
     try {
       
       console.log(id)
-      const response = await fetch(`https://recruiters-backend-1.onrender.com/candidates/${id}/`, {mode:'cors'});
+      const response = await fetch(`https://recruiters-app-945018261442.us-central1.run.app/candidates/${id}/`, {mode:'cors'});
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
@@ -51,7 +51,7 @@ export default function UserProfile() {
     try {
       
       console.log(id)
-      const response = await fetch(`https://recruiters-backend-1.onrender.com/recruiters/${id}/`, {mode:'cors'});
+      const response = await fetch(`https://recruiters-app-945018261442.us-central1.run.app/recruiters/${id}/`, {mode:'cors'});
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }

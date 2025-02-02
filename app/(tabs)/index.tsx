@@ -3,6 +3,7 @@ import { Text, View } from '../../components/Themed';
 import PostListItem from '../../components/PostListItem';
 import posts from '../../assets/data/posts.json';
 import React, { useState, useEffect } from 'react';
+import Header from "../../components/Header"
 
 const firstPost = posts[0];
 
@@ -22,7 +23,7 @@ export default function TabOneScreen() {
       // Function to fetch data
       const fetchData = async () => {
         try {
-          const response = await fetch('https://recruiters-backend-1.onrender.com/recruiters/', {mode:'cors'});
+          const response = await fetch('https://recruiters-app-945018261442.us-central1.run.app/recruiters/', {mode:'cors'});
           if (!response.ok) {
             throw new Error('Network response was not ok');
           }
@@ -69,7 +70,7 @@ export default function TabOneScreen() {
   return (
     <View style={styles.container}>
       
-      
+      <Header />
       <FlatList 
         data={data}
         renderItem={({item}) => <PostListItem recrutor={item} />}
@@ -83,7 +84,7 @@ export default function TabOneScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems:'center',
+    // alignItems:'center',
     
   },
   title: {
