@@ -32,6 +32,26 @@ export default function NewPostScreen() {
       verified_badge: true,
       updated_at: "2025-01-23T20:54:24.081352+00:00",
       location: "Mumbai, India"
+    },
+    {
+      created_at: "2025-01-23T20:54:21.080431+00:00",
+      recruiter_id: "4815b496-e2ba-4a52-8836-180e62caa89c",
+      requirements: {
+        role: "Event Coordinator",
+        experience: " 5+ years",
+        ctc: "USD 75,000/year",
+        location: "Las Vegas",
+        noticePeriod: " 30 days",
+        message: "Looking for an experienced candidate who has an expertise in Event Coordination",
+      },
+      
+      
+      recruiter_name: "Michael Lee",
+      recruiter_rating: 4,
+      profile_picture_url: "https://img.freepik.com/free-photo/calm-handsome-curly-haired-boy-posing-isolated-light-grey-standing-still-looks-peaceful-wearing-casual-manner-youth-style-concept_176532-8831.jpg?t=st=1737668843~exp=1737672443~hmac=51e3845ebc86ae5b02a3c885a8a698d1c97c35fbfc84febf43038fc90b82f9de&w=900",
+      verified_badge: true,
+      "updated_at": "2025-01-23T20:54:21.080431+00:00",
+      "location": "Singapore"
     }
   ]
   useEffect(() => {
@@ -121,6 +141,7 @@ const styles = StyleSheet.create({
     width: 60,
     aspectRatio: 1,
     borderRadius: 30,
+    left: 150,
     alignItems: 'center',
     justifyContent: 'center',
     position:'absolute',
